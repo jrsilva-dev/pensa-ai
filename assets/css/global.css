@@ -1,0 +1,72 @@
+body {
+  font-family: var(--fonte-principal);
+  color: var(--texto-escuro);
+  background-color: var(--branco);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--azul-principal);
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Botões */
+.btn,
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--amarelo-destaque);
+  color: var(--texto-escuro);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Animações on scroll */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+

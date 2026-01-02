@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--branco);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--azul-principal);
+}
+
+.logo span {
+  color: var(--amarelo-destaque);
+}
+
+/* Navegação */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-list a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--azul-principal);
+}
+
+/* Botão do menu */
+.nav-list .btn {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/* Espaço para compensar o header fixo */
+body {
+  padding-top: 80px;
+}
+
+/* Botão menu mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: var(--branco);
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}

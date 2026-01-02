@@ -1,0 +1,16 @@
+:root {
+  /* Cores */
+  --azul-principal: #1f3c88;
+  --amarelo-destaque: #f4c430;
+  --verde-apoio: #2fa4a9;
+  --cinza-claro: #f5f5f5;
+  --texto-escuro: #222;
+  --branco: #ffffff;
+
+  /* Tipografia */
+  --fonte-principal: 'Poppins', sans-serif;
+
+  /* Layout */
+  --container-width: 1200px;
+  --radius: 20px;
+}
