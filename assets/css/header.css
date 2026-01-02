@@ -67,6 +67,10 @@ body {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .nav-list {
