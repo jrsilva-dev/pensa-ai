@@ -1,0 +1,70 @@
+/* Hero Pacotes */
+.hero-pacotes {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  text-align: center;
+  padding: 100px 0 60px;
+}
+
+.hero-pacotes h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Pacotes */
+.pacotes {
+  background-color: var(--cinza-claro);
+}
+
+.pacote {
+  background-color: var(--branco);
+  padding: 30px 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.pacote h3 {
+  color: var(--azul-principal);
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pacote ul {
+  margin-bottom: 20px;
+}
+
+.pacote ul li {
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+
+.info {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Destaque */
+.pacote.destaque {
+  border: 2px solid var(--amarelo-destaque);
+  transform: scale(1.03);
+}
+
+/* Aviso */
+.aviso {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.95rem;
+}
