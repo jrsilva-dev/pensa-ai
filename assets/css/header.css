@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  margin: 0;
 }
 
 .header .container {
@@ -16,22 +17,12 @@
   height: 100%;
 }
 
-/* Logo */
-.logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--azul-principal);
-}
-
-.logo span {
-  color: var(--amarelo-destaque);
-}
 
 /* Navegação */
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 28px;
 }
 
 .nav-list a {
@@ -53,7 +44,7 @@
 
 /* Espaço para compensar o header fixo */
 body {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 /* Botão menu mobile */

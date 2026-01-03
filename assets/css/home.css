@@ -1,63 +1,96 @@
+.header {
+  width: 100%;
+  height: 68px;
+  /* HEADER FINO */
+  background-color: var(--branco);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 48px;
+  /* só lateral */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.logo {
+  width: 130px;
+  height: auto;
+
+  display: block;
+}
+
+/* Efeito leve ao passar o mouse (moderno e escolar) */
+.logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
 .hero {
-    background: linear-gradient(120deg,
-            var(--azul-principal),
-            var(--verde-apoio));
-    color: var(--branco);
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
+  background: linear-gradient(120deg,
+      var(--azul-principal),
+      var(--verde-apoio));
+  color: var(--branco);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    max-width: 600px;
-    margin-bottom: 20px;
+  font-size: 2.8rem;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    max-width: 500px;
-    margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 30px;
 }
 
 
 .servicos {
-    background-color: var(--cinza-claro);
+  background-color: var(--cinza-claro);
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .card {
-    background-color: var(--branco);
-    padding: 30px;
-    border-radius: var(--radius);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
+  background-color: var(--branco);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .card h3 {
-    margin-bottom: 15px;
-    color: var(--azul-principal);
+  margin-bottom: 15px;
+  color: var(--azul-principal);
 }
 
 
 .cta {
-    background-color: var(--azul-principal);
-    color: var(--branco);
-    text-align: center;
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  text-align: center;
 }
 
 .cta h2 {
-    color: var(--branco);
-    margin-bottom: 30px;
+  color: var(--branco);
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -80,7 +113,7 @@
 }
 
 /* Animação do Hero */
-.hero-content > * {
+.hero-content>* {
   opacity: 0;
   transform: translateY(20px);
   animation: heroFadeUp 0.8s ease forwards;

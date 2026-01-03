@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+  height: 68px;                 /* HEADER FINO */
+  background-color: var(--branco);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 48px;              /* só lateral */
+  box-sizing: border-box;
+}
+
+
+.logo {
+  width: 130px;
+  height: auto;
+
+  display: block;
+}
+
+/* Efeito leve ao passar o mouse (moderno e escolar) */
+.logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.hero-servicos {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  text-align: center;
+  padding: 100px 0 60px;
+}
+
+.hero-servicos h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Serviços */
+.servicos {
+  background-color: var(--cinza-claro);
+}
+
+.servicos .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.servico {
+  background-color: var(--branco);
+  padding: 30px 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.servico h3 {
+  color: var(--azul-principal);
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta-servicos {
+  background-color: var(--branco);
+  text-align: center;
+}
+
+.cta-servicos h2 {
+  color: var(--azul-principal);
+  margin-bottom: 15px;
+}
+
+.cta-servicos p {
+  margin-bottom: 25px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .servico {
+    padding: 25px 20px;
+  }
+}
